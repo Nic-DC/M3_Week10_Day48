@@ -7,6 +7,8 @@ import NavbarComponent from "./components/NavbarComponent";
 import FooterComponent from "./components/FooterComponent";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TVShows from "./components/TVShows";
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <NavbarComponent logo={logo} avatar={avatar} />
         <Routes>
           <Route element={<HomePage />} path="/" />
+          <Route element={<TVShows />} path="/tv-shows" />
+          <Route element={<MovieDetails />} path="/movie-details/:movieId" />
         </Routes>
         <FooterComponent />
       </div>

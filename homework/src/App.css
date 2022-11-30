@@ -131,3 +131,8 @@ UTILITY CLASSES
   color: white;
   border: 2px solid white;
 }
+
+/* ROUTER PROJECT */
+a.navbar-router-links:hover {
+  text-decoration: none;
+}
