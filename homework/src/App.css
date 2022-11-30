@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -----------------------------------------------------
+NAVBAR -> NavbarComponent.jsx
+------------------------------------------------------*/
+.bg-black {
+  background-color: black;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img {
+  width: 7rem;
+  object-fit: cover;
+}
+
+#profile-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar,
+#avatar-small {
+  width: 2.5rem;
+  object-fit: cover;
+}
+
+#avatar-small {
+  width: 1rem;
+}
+
+/* -----------------------------------------------------
+GENRE -> GenreComponent.jsx
+------------------------------------------------------*/
+
+#genreDetails {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -----------------------------------------------------
+GALLERies -> 
+------------------------------------------------------*/
+#movieGallery {
+  background-color: black;
+  padding: 1rem 1.5rem;
+}
+
+.rendered-image {
+  cursor: pointer;
+  transition: transfrom 350ms ease-out;
+}
+
+.rendered-image:hover {
+  transform: scale(1.05);
+}
+
+/* -----------------------------------------------------
+FOOTER -> FooterComponent.jsx
+------------------------------------------------------*/
+#footer {
+  background-color: black;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* -----------------------------------------------------
+UTILITY CLASSES
+------------------------------------------------------*/
+
+.btn-bg {
+  color: white;
+  font-size: 0.85rem;
+}
+
+.genreBtn {
+  color: white;
+  border: 2px solid white;
+}
